@@ -1,0 +1,42 @@
+/* -------------------------------- CSS RESET ------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------ ROOT ELEMENT ------------------------------ */
+html {
+  font-size: 62.5%;
+}
+
+/* --------------------------------- LAYOUT --------------------------------- */
+main {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+/* ------------------------------ STYLING START ----------------------------- */
+main > div {
+  padding: 2rem;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+main > div:not(#active):hover {
+  background-color: red;
+}
+
+main #active {
+  background-color: green;
+}
+
+main i {
+  font-size: 3rem;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
